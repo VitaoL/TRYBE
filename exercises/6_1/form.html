@@ -55,7 +55,7 @@
                 required/>
             </label>
              
-             <select>Estados</select>
+             <select id="est">Estados</select>
 
              
              <label for="apt"><input type="radio"
@@ -74,5 +74,23 @@
 
         </fieldset>
     </form>
+    <script>
+        let est = document.getElementById('est');
+        let estados = ['AC', 'AL', 'AP', 'AM', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA',
+         'MT', 'MS', 'MG', 'PA', 'PB', 'PR', 'PE' , 'PI', 'RJ', 'RN', 'RS', 'RO', 'RR' ,'SC' ,'SP'
+         ,'SE' ,'TO']
+
+         for(let i = 0; i < 27 ; i++ ) {
+                let opt = document.createElement('option');
+                opt.innerHTML = estados[i];
+                opt.value =  estados[i];
+                opt.id = 'est'
+                est.appendChild(opt);
+            };
+
+        est.addEventListener('click',function(event) {
+                console.log(event.target.value);
+        })
+    </script>
 </body>
 </html>
