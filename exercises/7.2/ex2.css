@@ -81,6 +81,17 @@
   height: 1%;
 }
 
-@media only screen and (max-width:900px) {
-  #aside
+@media only screen and (max-width:1050px) {
+  #header {
+   visibility: hidden;
+  }
+  #navigation { 
+    visibility: hidden;
+  }
+  #footer {
+    visibility: hidden;
+  }
+  #aside {
+    display: inherit;
+  }
 }
