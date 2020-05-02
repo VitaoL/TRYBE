@@ -1,0 +1,16 @@
+#header {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    border: 2px solid blue;
+}
+
+.container-1 {
+    width: 80%;
+    margin: 1px auto 0 auto;
+    border: 2px double blue;
+    background-color: rgb(177, 230, 230);
+    padding: 10px;
+}

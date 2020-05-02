@@ -1,0 +1,37 @@
+p {
+  animation-duration: 3s;
+  animation-name: apper;
+}
+
+#name {
+  animation-name: slide;
+  animation-duration: 5s;
+}
+
+@keyframes apper {
+  from {
+    font-size: small;
+    color: blue;
+  }
+  60% {
+    font-size: larger;
+    color: black;
+  }
+  to {
+    font-size: small;
+    color: red;
+  }
+}
+
+@keyframes slide {
+  from { 
+    margin-right: 100%;
+    margin-left: 0%;
+    width: 100%;
+  }
+  to {
+    margin-right: 0%;
+    margin-left: 100%;
+    width: 100%;
+  }
+}
