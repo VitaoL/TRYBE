@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ex4.css" />
+</head>
+<body>
+    <img src="./cartas/verso-da-carta.png" alt="carta 5 de ouros" height="200px" id="verso" >
+    <div id="grid"></div>
+
+<script>
+    let btn = document.getElementById('verso');
+    let grid = document.getElementById('grid');
+    btn.addEventListener('click', addCard);
+    let cards = ['cinco-de-ouros.png' , 
+        'nove-de-espadas.png' ,
+        'quatro-de-paus.png' ,
+        'seis-de-copas.png'];
+    function addCard(){
+        let card = document.createElement('img'); 
+        card.src = './cartas/' + String(cards[parseInt(Math.random() * (3 - 0) + 0)]);
+        card.classList.add("card");
+        grid.appendChild(card);
+    }
+</script>
+</body>
+</html>
